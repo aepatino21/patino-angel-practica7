@@ -62,6 +62,18 @@ header {
 #hero {
     position: relative;
     background-color: var(--clr-dark-1);
+    overflow: hidden;
+}
+
+#hero ul {
+    display: flex;
+    width: 300%;  /* 3 times the width of the container */
+    animation: slide 15s infinite alternate ease-in-out; /* 15 seconds / 3 img = 5 seconds per img */
+}
+
+#hero ul li {
+    list-style: none;
+    width: 100%;
 }
 
 #hero img {
@@ -80,6 +92,27 @@ header {
     left: 0;
     text-align: center;
     color: var(--clr-black);
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0%;
+    }
+    30% {
+        margin-left: 0%;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: -200%;
+    }
 }
 
 #characters-container {
