@@ -208,3 +208,36 @@ footer a {
     text-decoration-color: var(--clr-orange);
     font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+    #characters-container #characters {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #hero h1 {
+        font-size: 1.6em;
+    }
+
+    #characters-container {
+        gap: 1em;
+    }
+    
+    .character {
+        width: 20em;
+    }
+    
+    .character img {
+        width: 10em;
+        height: 22.5em;
+    }
+    
+    .character .character-info {
+        padding-right: 1.5em;    
+    }
+    
+    .character .character-info .status {
+        padding-bottom: 2.5em;
+    }
+    
+}
+
